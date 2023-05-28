@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+    margin: 0;
+}
+@font-face {/*字体定义*/
+	font-family:MD;
+	src: url(font/MD.ttf);
+}
+body{
+	background: url(imgs/shuimo.gif) no-repeat center center fixed;
+	background-size: 100% 100%;
+	
+}
+.song{
+	width: 30vw;
+	font-size: 2vw;
+	/* border: 1px solid black; */
+	text-align: center;
+	background: url(imgs/banner.jpg) no-repeat center center;
+    background-size: 100% 100%;
+	opacity: 0.6;
+	position: fixed;
+	top: 5vh;
+	left: 10vw;
+}
+.song h1{
+	color: white;
+	font-size: 40px;
+	text-shadow: 5px 5px 5px grey;
+	border: 1px solid black;
+	border-radius: 50%;/*父容器的一半 300px*50% */
+	background-color: lightgrey;
+	font-family: MD;
+}
+.song #info1{
+	font-style: italic;
+}
+.song #info1 a{
+	color: darkcyan;
+}
+.song #info2 a{
+	text-decoration: none;
+}
+.song #info2 a:hover{
+	text-decoration: underline;
+	color: red;
+	font-weight: bold;
+}
+.song #info2 a::after{
+	content:url(imgs/JAY.jpg) ;
+}
+.song #lyric{
+	font-size: 0.8em;
+	font-family: "楷体";
+}
+.song #lyric::first-letter{
+	font-size: 30px;
+	color: green;
+}
+.CD{
+	width: 40vw;
+	height: 40vw;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: url(imgs/cd.png) no-repeat center center;
+    box-shadow: 5px 5px 5px black;
+	position: fixed;
+	top: 5vh;
+	left: 50vw;
+}
+.CD #small{
+	width: 33.3%;
+	height: 33.3%;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: black url(imgs/note.gif) no-repeat center center;
+    position: absolute;
+	top: 33.3%;
+	left: 33.3%;
+}
+#myButton{
+	width: 33.3%;
+	height: 5%;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: gray;
+	position: absolute;
+	bottom: -10%;
+	left: 33.3%;
+}

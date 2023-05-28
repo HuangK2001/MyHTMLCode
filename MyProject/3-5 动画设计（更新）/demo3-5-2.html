@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2D和3D变换</title>
+		<style>
+			div{
+				width: 150px;
+				height: 150px;
+				font-size: 20px;
+				text-align: center;
+				line-height: 150px;
+				background-color: yellow;
+				display: inline-block;
+				margin: 30px;
+			}
+			#box1:hover{
+				-webkit-transform: translate(50px,50px);
+				-webkit-transition: all 2s linear;
+			}
+			#box2:hover{
+				-webkit-transform: rotate(45deg);
+			}
+			#box3:hover{
+				-webkit-transform:scale(2,2) rotate(45deg);
+			}
+			#box4:hover{
+				-webkit-transform:skew(0,30deg);
+			}
+			#box5:hover{
+				-webkit-transform:  perspective(500) rotateY(45deg);
+				-webkit-transition: all 3s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			1.平移！
+		</div>
+		<div id="box2">
+			2.旋转！
+		</div>
+		<div id="box3">
+			3.缩放！
+		</div>
+		<div id="box4">
+			4.倾斜！
+		</div>
+		<div id="box5">
+			3D变换！
+		</div>
+	</body>
+</html>

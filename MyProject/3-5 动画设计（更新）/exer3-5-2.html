@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>练习：图标元素动画效果</title>
+		<style>
+			body {
+				background:mediumpurple;
+				margin:150px;
+			}
+			@font-face {
+				font-family: 'icon-font';
+				src: url(flat-ui-icons-regular.ttf);
+			}
+			.icon{
+				font-size:0px;
+				cursor: pointer;
+				display:inline-block;
+				position:relative;
+				width:100px;
+				height:100px;
+				border-radius:50%;
+				background:white;
+				margin-right:20px;
+			}
+			.icon::before{
+				content:"";
+				font-family: 'icon-font';
+				speak: none;/* 使文本内容不能通过屏幕阅读器等读取 */
+				font-size:50px;
+				text-align:center;
+				display:block;
+				line-height:100px;
+				color:mediumpurple;
+			}
+			.close::before{
+				content:"\e609";
+			}
+			.search::before{
+				content:"\e630";
+			}
+			.user::before{
+				content:"\e631";
+			}
+			.mail::before{
+				content:"\e632";
+			}
+			.chat::before{
+				content:"\e62d";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="close icon">Close</div>
+		<div class="search icon">Search</div>
+		<div class="user icon">User</div>
+		<div class="mail icon">Mail</div>
+		<div class="chat icon">Chat</div>
+	</body>
+</html>

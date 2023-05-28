@@ -1,0 +1,30 @@
+/**
+ * Edit:Yanglu
+ */
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS优先级</title>
+<!-- 	选择器			优先级权重值
+		（1）标签选择器		1
+		（2）类选择器			10
+		（3）id选择器		100 (最高)-->
+		<style>
+			p{
+				color: red;
+			}
+			.header{
+				color: green;
+			}
+			#parent{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="parent" class="header">
+			我到底是什么颜色呢-_-？
+		</p>
+	</body>
+</html>

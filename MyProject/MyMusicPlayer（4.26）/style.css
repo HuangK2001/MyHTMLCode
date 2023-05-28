@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(imgs/shuimo.gif) no-repeat center center fixed;
+	background-size: 100% 100%;
+}
+@font-face {
+	font-family:MD;
+	src: url(font/MD.ttf);
+}
+.song{
+	width: 300px;
+	height: 580px;
+	border: 1px solid black;
+	text-align: center;
+	background: url(imgs/banner.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	opacity: 0.6;
+}
+.song h1{
+	font-size: 40px;
+	color: white;
+	text-shadow: 5px 5px 5px grey;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: lightgray;
+	font-family:MD ;
+}
+.song #info1{
+	font-style: italic;
+}
+.song #info1 a{
+	color: darkcyan;
+}
+.song #info2 a{
+	text-decoration: none;
+}
+.song #info2 a:hover{
+	text-decoration: underline;
+	color: red;
+	font-weight: bold;
+}
+.song #info2 a::after{
+	content: url(imgs/JAY.jpg);
+}
+.song #lyric{
+	font-size: 20px;
+	font-family: "楷体";
+}
+.song #lyric::first-letter{
+	font-size:30px;
+	color: green;
+}
+.cd{
+	width: 440px;
+	height: 440px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+.cd #small{
+	width: 33.3%;
+	height: 33.3%;
+	border-radius: 50%;
+	border: 1px solid black;
+}

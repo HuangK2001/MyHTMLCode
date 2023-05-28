@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册表单</title>
+	</head>
+	<body>
+		<form action="http://www.meishihui68.com.cn/FormTest.ashx" method="post" enctype="multipart/form-data">
+			<p>
+				<span >用户名：</span>
+				<input type="text" name="uname" required="required" placeholder="小黄">
+				<input type="button" value="检查用户名是否存在">
+			</p>
+			<p>
+				<span>密码：</span>
+				<input type="password" name="upass" required="required" pattern="^\w{6,18}$">
+			</p>
+			<p>
+				<span>确认密码：</span>
+				<input type="password" required="required">
+			</p>
+			<p>
+				<span>区域：</span>
+				<select name="uprov">
+					<option value="chengdu">成都</option>
+					<option value="guangzhou" selected="selected">广州</option>
+					<option value="dalian">大连</option>
+				</select>
+			</p>
+			<p>
+				<span>性别：</span>
+				<input type="radio" value="boy" name="ugender" checked="checked">男
+				<input type="radio" value="girl" name="ugender">女
+			</p>
+			<p>
+				<span>年龄：</span>
+				<input type="number" name="uage" min="15" max="30" step="1"/>
+			</p>
+			<p>
+				<span>生日：</span>
+				<input type="date" name="udate"/>
+			</p>
+			<p>
+				<span>手机号：</span>
+			    <input type="tel" name="utel" required="required"/>
+			</p>
+			<p>
+				<span>头像：</span>
+				<input type="file" name="uphoto" />
+			</p>
+			<p>
+				<span>主页：</span>
+			     <input type="url" name="uurl" />
+			</p>
+			<p>
+				<span>邮箱：</span>
+				<input type="email" name="uemail" required="required"/>
+			</p>
+			<p>
+				<span>最喜欢的颜色：</span>
+				<input type="color" name="ubackcolor" />
+			</p>
+			<p>
+				<input type="submit" value="注册">
+				<input type="reset" value="取消">
+			</p>
+		</form>
+	</body>
+</html>

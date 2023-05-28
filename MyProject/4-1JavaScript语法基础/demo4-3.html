@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS基本语法</title>
+	</head>
+	<body>
+		<script>
+			//变量定义:用var定义
+			var x = 3;
+			var y = 3.14;
+			var ch = 'A';
+			var bool1 = true;
+			var bool2 = false;
+			var str1 = ['A', 'B', 'C'];
+			var str2 = "ABC";
+			//数据类型转换:把字符串转换成整数
+			var num1 = "12abc34";
+			var res = parseInt(num1);
+			document.write(res + "</br>");
+			//运算符
+			//+:字符串参与加法运算，加号为拼接符
+			var res1 = x + y;
+			var res2 = y + str2;
+			document.write("y+str2的结果为" + res2);
+			//==判等 ===恒等
+			var a = 1;
+			var b = '1';
+			//判等运算符只比较值，不比较数据类型
+			console.log(a == b);
+			//恒等运算符比较数据和类型
+			console.log(a === b);
+			//程序结构：条件和循环
+			//输入
+			var score = prompt("请输入一个成绩");
+			//处理
+			var res3 = '';
+            var rank = ['E','E','E','E','E','D','C','B','A','A'];//查找表结构取代分支
+			res3 = rank[parseInt(score/10)];
+			//输出
+			console.log("成绩为" + score + "等级为" + res3);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>学生信息登记表</h1>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<p>
+				<span>姓名 ：</span>
+				<input type="text" name="name" required="required" placeholder="列如 : 小明"/>
+				<span>( 必填 )</span>
+			</p>
+			<p>
+				<span>密码 ：</span>
+				<input type="password" name="password" required="required" placeholder="6-18位"/>
+				<span>( 必填 )</span>
+			</p>
+			<p>
+				<span>性别 ：</span>
+				<input type="radio" name="gender" value="man" checked="checked"/>男
+		        <input type="radio" name="gender" value="woman" />女
+			</p>
+			<p>
+				<span>年龄 ：</span>
+				<input type="number" name="age" max="100" min="10" step="1" placeholder="20"/>
+			</p>
+			<p>
+				<span>出生日期 ：</span>
+				<input type="date" name="birth" />
+				<span>( 必填 )</span>
+			</p>
+			<p>
+				<span>所在校区 ：</span>
+				<select name="campus">
+					<option selected="selected">-请选择-</option>
+					<option>成都东软学院</option>
+				</select>
+			</p>
+			<p>
+				<span>电子邮箱 ：</span>
+				<input type="email" name="email" required="required" placeholder="123456@126.com"/>
+				<span>( 必填 )</span>
+			</p>
+			<p>
+				<span>手机号码 ：</span>
+				<input type="tel" name="telephone" required="required"/>
+				<span>( 必填 )</span>
+			</p>
+			<p>
+				<span>个人头像 ：</span>
+				<input type="file" name="photo" />
+			</p>
+			<p>
+				<span>个人主页 ：</span>
+				<input type="url" name="hpage" placeholder="http://www.itcast.cn"/>
+			</p>
+			<p>
+				<span>兴趣爱好 ：</span>
+				<input type="checkbox" name="hobby" value="read"/>读书
+				<input type="checkbox" name="hobby" value="game"/>打游戏
+				<input type="checkbox" name="hobby" value="other"/>其他
+			</p>
+			<p>
+				<span>幸运颜色 ：</span>
+				<input type="color" name="lovecolor"/>
+			</p>
+			<p>
+				<span>人生信条 ：</span><br>
+				<textarea rows="3" cols="35" name="motto">淡泊明志，宁静致远！
+				</textarea>
+			</p>
+			<p>
+				<input type="submit" value="提交"/>
+				<input type="reset" value="重置"/>
+			</p>
+		</form>
+	</body>
+</html>

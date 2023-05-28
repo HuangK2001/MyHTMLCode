@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动</title>
+		<style>/*瀑布流布局*/
+			#container{
+				width: 500px;
+				height: 700px;
+				border: 1px solid black;
+			}
+			.pic{
+				width: 200px;
+				height: 200px;
+				border: 1px solid black;
+				margin: 5px;
+				float: left;
+			}
+			.pic:nth-child(1){
+				height: 300px;
+				/* float: left; */
+			}
+			/* .pic:nth-child(2)
+			{
+				width: 250px;
+			} */
+			.pic img{/*文字环绕（图片浮动）*/
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="pic">
+				<img src="imgs/drink.png">
+				<p>
+					In sagittis sit amet lacus non luctus.
+					In sagittis sit amet lacus non luctus.
+				</p>
+			</div>
+			<div class="pic">
+				<img src="imgs/star.png">
+				<p>
+					In sagittis sit amet lacus non luctus.
+					In sagittis sit amet lacus non luctus.
+				</p>
+			</div>
+			<div class="pic">
+				<img src="imgs/pizza.png">
+				<p>
+					In sagittis sit amet lacus non luctus.
+					In sagittis sit amet lacus non luctus.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

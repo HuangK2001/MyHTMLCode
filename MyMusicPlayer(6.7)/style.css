@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(imgs/shuimo.gif) no-repeat fixed;
+	background-size: 100% 100%;
+}
+@font-face {
+	font-family:MD;
+	src: url(font/MD.ttf);
+}
+.song{
+	width: 30vw;
+	font-size: 2vw;
+	/* border: 1px solid black; */
+	border-radius: 20%;
+	text-align: center;
+	background: url(imgs/banner.jpg) no-repeat center center;
+	opacity: 0.5;
+	box-shadow:5px 5px 10px lightgray ;
+	position: fixed;
+	top: 10vh;
+	left: 10vw;
+	
+}
+h1{
+	font-size: 2em;
+	/* border: 1px solid black; */
+	border-radius: 50%;
+	text-shadow: 5px 5px 5px lightgrey;
+	background-color: grey;
+	color: white;
+	font-family: MD;
+	margin-top: -2vw;
+	margin-bottom: 2vw;
+}
+#info1{
+	font-style: italic;
+}
+#info1 a{
+	color: darkcyan;
+}
+#info2 a{
+	text-decoration: none;
+	color: brown;
+}
+#info2 a::after{
+	content: url(imgs/JAY.jpg);
+}
+#info2 a:hover{
+	text-decoration: underline;
+}
+#lyric{
+	font-family: "楷体";
+	font-size: 0.8em;
+}
+#lyric::first-letter{
+	font-size: 1em;
+	color: green;
+}
+@-webkit-keyframes play{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+.cdBox{
+	width: 40vw;
+	height:40vw;
+	position: fixed;
+	top: 5vh;
+	left: 50vw;
+	
+}
+.cdBox #cd{
+	width:100%;
+	height:100%;
+	border-radius: 50%;
+	background: url(imgs/cd.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	box-shadow: 5px 5px 5px black;
+	-webkit-animation: play 5s linear infinite;
+	-webkit-animation-play-state: paused;
+}
+#cd #child{
+	width: 33.3%;
+	height: 33.3%;
+	border-radius:50%;
+	background: black url(imgs/note.gif) no-repeat center center;
+	position: absolute;
+	top: 33.3%;
+	left: 33.3%;
+}
+.cdBox #myButton{
+	width: 33.3%;
+	height: 5%;
+	font-size: 2vw;
+	background-color: grey;
+	border: none;
+	border-radius: 10px;
+	position: absolute;
+	left: 33.3%;
+	bottom: -10%;
+	/* top: 105%; */
+}
+
+

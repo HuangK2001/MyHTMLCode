@@ -1,0 +1,39 @@
+html,body{
+	height: 100%;
+	color: white;
+	font-family: sans-serif;
+		}
+body{
+	background:url(sky.jpeg) center,center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+#box{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform:translateY(-50%) ;
+	-moz-transform:translateY(-50%) ;
+	-webkit-transform:translateY(-50%) ;
+	}
+h1{
+	font-size: 54px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	}
+p{
+	font-size: 21px;
+	margin-bottom: 40px;
+	}
+a{
+	font-size: 18px;
+	color: lightblue;
+	border: 1px solid lightblue;
+	border-radius: 3px;
+	padding: 10px 100px;
+	text-decoration: none;
+	}

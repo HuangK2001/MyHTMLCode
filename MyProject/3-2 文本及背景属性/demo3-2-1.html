@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本及背景属性</title>
+		<style>
+			@font-face {
+				font-family: mzd;/*定义字体名称*/
+				src: url(font/mzd.ttf);
+			}
+			body{
+				font-family: "楷体";/*中文要加双引号*/
+			}
+			h1{
+				font-size: 50px;
+				color: rgb(0,0,158,0.8);
+				font-family: mzd;
+			}
+			.author{
+				font-weight: bold;
+			}
+			p.author{
+				color: grey;
+				text-decoration: underline;
+			}
+			h1,h2{
+				text-align: center;	
+			}
+			#content span{
+	            color: darkred;
+			}
+			#content{
+				font-size: 20px;
+				text-indent: 2em;
+				background-color: lightgray;
+				opacity: 0.5;/*不透明度*/
+			}
+			.poem{
+				width: 1200px;
+				height: 600px;
+				border: 1px solid black;
+			  /*background-color: yellow;
+				background-image: url(imgs/bg.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;*/
+				background: url(imgs/bg.jpg) no-repeat;
+				background-size: contain;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="poem">
+			<div id="info">
+				<h1 id="headline">《面朝大海，春暖花开》</h1>
+				<h2 class="author"> 作者：海子</h2>
+				<p class="author">海子(1964-1989)：原名<span style="color: red;">查海生</span>，出生于安徽省怀宁县高河镇查湾村，当代青年诗人。</p>
+			</div>
+			<div id="content">
+				<p>从明天起，做一个幸福的人，喂马，劈柴，周游世界，从明天起，关心粮食和蔬菜，我有一所房子，<span>面朝大海，春暖花开</span>。</p>
+				<p>从明天起，和每一个亲人通信，告诉他们我的幸福，那幸福的闪电告诉我的，我将告诉每一个人，给每一条河每一座山取一个温暖的名字。</p>
+				<p>陌生人，我也为你祝福，愿你有一个灿烂的前程，愿你有情人终成眷属，愿你在尘世获的幸福。
+				<p>我也愿<span>面朝大海，春暖花开</span>……</p>
+			</div>
+		</div>
+	</body>
+</html>
